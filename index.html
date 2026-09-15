@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Página Web HTML5</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+        Esta página utiliza HTML5 para organizar su contenido.
+
+        Ventajas de HTML5:
+        1. Permite utilizar etiquetas semánticas como header, nav, main,
+           section, article y footer.
+        2. Facilita la organización y comprensión del código.
+        3. Permite utilizar contenido multimedia mediante video y audio.
+        4. Incluye elementos como figure, figcaption y canvas.
+
+        Comparación:
+        En versiones antiguas de HTML se utilizaban muchos elementos div
+        para organizar la página. HTML5 permite utilizar etiquetas con
+        significado específico, haciendo el código más organizado,
+        accesible y fácil de mantener.
+    -->
+
+    <header>
+        <h1>Mi Página Web Básica</h1>
+
+        <p>
+            Laboratorio desarrollado utilizando HTML5 y CSS.
+        </p>
+    </header>
+
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#html">HTML5</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+
+    <main>
+
+        <section id="inicio">
+
+            <h2>Introducción</h2>
+
+            <p>
+                Esta página web fue creada como parte de una actividad
+                para practicar la estructura básica de HTML y las
+                características principales de HTML5.
+            </p>
+
+            <p>
+                HTML permite crear y organizar el contenido que se muestra
+                dentro de los navegadores web.
+            </p>
+
+        </section>
+
+
+        <section id="html">
+
+            <h2>¿Qué es HTML5?</h2>
+
+            <article>
+
+                <h3>Características principales</h3>
+
+                <p>
+                    HTML5 es una versión moderna de HTML que introduce
+                    elementos semánticos y permite trabajar con contenido
+                    multimedia directamente desde el navegador.
+                </p>
+
+                <h3>Algunas etiquetas importantes</h3>
+
+                <ul>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>main</li>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>figure</li>
+                    <li>footer</li>
+                </ul>
+
+                <p>
+                    Puedes obtener más información visitando
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML"
+                       target="_blank">
+                        MDN Web Docs
+                    </a>.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>Imagen utilizando Figure</h2>
+
+            <figure>
+
+                <img src="imagenes/html5.png"
+                     alt="Imagen relacionada con HTML5">
+
+                <figcaption>
+                    Ejemplo del uso de las etiquetas figure y figcaption.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <section id="multimedia">
+
+            <h2>Elementos multimedia de HTML5</h2>
+
+            <h3>Video</h3>
+
+            <video controls width="500">
+
+                <source src="media/video.mp4" type="video/mp4">
+
+                Tu navegador no soporta la etiqueta video.
+
+            </video>
+
+
+            <h3>Audio</h3>
+
+            <audio controls>
+
+                <source src="media/audio.mp3" type="audio/mpeg">
+
+                Tu navegador no soporta la etiqueta audio.
+
+            </audio>
+
+        </section>
+
+
+        <section>
+
+            <h2>Elemento Canvas</h2>
+
+            <p>
+                HTML5 también incluye el elemento canvas, que permite crear
+                gráficos dentro de una página web.
+            </p>
+
+            <canvas id="miCanvas" width="400" height="150">
+                Tu navegador no soporta canvas.
+            </canvas>
+
+        </section>
+
+
+        <section id="contacto">
+
+            <h2>Información del laboratorio</h2>
+
+            <p>
+                Esta página fue desarrollada utilizando Visual Studio Code
+                y posteriormente almacenada en un repositorio de GitHub.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Proyecto de HTML5 - 2024
+        </p>                                                                    
+        <p>
+            Estudiante: Alex Perez Collazo
+        </p>
+        <p>
+            Profesor: Pablo Pinna Carrillo
+        </p>
+        <p>
+            Laboratorio 3.1
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const canvas = document.getElementById("miCanvas");
+
+        const ctx = canvas.getContext("2d");
+
+        ctx.font = "24px Arial";
+
+        ctx.fillText("HTML5 Canvas", 100, 80);
+
+    </script>
+
+</body>
+
+</html>
